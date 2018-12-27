@@ -1,13 +1,13 @@
 Name:    vscode
-Version: 0.10.11
+Version: 1.30.1
 Release: 1%{?dist}
 Summary: Visual Studio Code - An open source code editor
 
 Group:   Development/Tools
 License: MIT
 URL:     https://github.com/Microsoft/vscode
-Source0: https://github.com/Microsoft/vscode/archive/%{_commit}/%{repo}-%{_shortcommit}.tar.gz
-Source1: about.json
+Source0: %{name}-master.tar.gz
+Source1: https://github.com/Microsoft/vscode/archive/%{version}.tar.gz
 
 BuildRequires: npm, node-gyp
 BuildRequires: python, make, libX11-devel
