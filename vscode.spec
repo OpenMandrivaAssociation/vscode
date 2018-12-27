@@ -9,8 +9,8 @@ URL:     https://github.com/Microsoft/vscode
 Source0: %{name}-master.tar.gz
 Source1: https://github.com/Microsoft/vscode/archive/%{version}.tar.gz
 
-BuildRequires: npm, node-gyp
-BuildRequires: python, make, libX11-devel
+BuildRequires: nodejs
+BuildRequires: python, make, libx11-devel
 BuildRequires: desktop-file-utils, git
 Requires: electron
 
